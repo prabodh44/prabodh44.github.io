@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prabodh Tuladhar — Backend developer (Python/Django) and Computer Science educator based in Kathmandu, Nepal. Available for freelance and contract work." />
+  <meta name="author" content="Prabodh Tuladhar" />
+  <meta property="og:title" content="Prabodh Tuladhar — Educator, Developer, Learner" />
+  <meta property="og:description" content="Backend developer and CS educator. Django REST Framework, Python, Java. Available for contract and freelance work." />
+  <meta property="og:type" content="website" />
+  <title>Prabodh Tuladhar — Educator, Developer, Learner</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Mobile top bar -->
+  <header class="mobile-bar" aria-label="Mobile navigation bar">
+    <span class="mobile-bar__name">Prabodh Tuladhar</span>
+    <button id="navToggle" class="mobile-bar__toggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary sidebar">
+      <div class="sidebar__inner">
+        <div class="sidebar__identity">
+          <img src="profile.jpg" alt="Portrait of Prabodh Tuladhar" class="sidebar__avatar" />
+          <h1 class="sidebar__name">Prabodh Tuladhar</h1>
+          <p class="sidebar__tagline">Educator, Developer, Learner</p>
+          <p class="sidebar__location">
+            <span class="mono">~/</span>Kathmandu, Nepal
+          </p>
+        </div>
+
+        <nav class="sidebar__nav" aria-label="Section navigation">
+          <ul>
+            <li><a href="#about" data-nav><span class="nav-num">01</span><span class="nav-label">About</span></a></li>
+            <li><a href="#skills" data-nav><span class="nav-num">02</span><span class="nav-label">Skills</span></a></li>
+            <li><a href="#experience" data-nav><span class="nav-num">03</span><span class="nav-label">Experience</span></a></li>
+            <li><a href="#projects" data-nav><span class="nav-num">04</span><span class="nav-label">Projects</span></a></li>
+            <li><a href="#writing" data-nav><span class="nav-num">05</span><span class="nav-label">Writing</span></a></li>
+            <li><a href="#contact" data-nav><span class="nav-num">06</span><span class="nav-label">Contact</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar__links">
+          <a href="https://github.com/prabodh44" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/prabodh-tuladhar" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V9h3v10zM6.5 7.3a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM19 19h-3v-5c0-1.2-.4-2-1.5-2-.8 0-1.3.6-1.5 1.1-.1.2-.1.5-.1.8V19h-3V9h3v1.3c.4-.6 1.1-1.5 2.7-1.5 2 0 3.4 1.3 3.4 4V19z"/></svg>
+          </a>
+          <a href="mailto:prabodhtuladhar44@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg>
+          </a>
+        </div>
+
+        <a href="Prabodh_Tuladhar_CV.pdf" download class="sidebar__cv">
+          <span class="mono">↓</span> Download CV
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero__prompt mono">$ whoami</div>
+        <h2 class="hero__headline">
+          Developer<span class="amp">&nbsp;&amp;&nbsp;</span>educator<br />
+          building <span class="hero__accent">backend systems</span><br />
+          and <span class="hero__accent">curriculum</span>.
+        </h2>
+        <p class="hero__lead">
+          I design Django REST Framework APIs, ship Android apps, and author
+          Nepal's national Computer Science curriculum for grades 9&ndash;12.
+          Currently available for freelance and contract work.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch <span class="mono">→</span></a>
+        </div>
+        <div class="hero__meta mono">
+          <span>status: <em class="status-dot"></em> open to work</span>
+          <span>timezone: UTC+5:45</span>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <header class="section__head">
+          <span class="section__num mono">// 01</span>
+          <h3 class="section__title">About</h3>
+        </header>
+        <div class="section__body prose">
+          <p>
+            I&rsquo;m a backend developer and computer science educator based in
+            Kathmandu, Nepal. For the last four years I&rsquo;ve split my time between
+            two things I care equally about: shipping software and teaching
+            people how to build it.
+          </p>
+          <p>
+            On the development side I work mostly in <strong>Python</strong> and
+            <strong>Django REST Framework</strong>, with earlier experience in
+            Android (Java, Cordova) and a solid foundation in C/C++ and Java.
+            On the teaching side I lecture undergraduate programming at
+            <strong>Islington College</strong>, teach Grades 11&ndash;12 Computer
+            Science at <strong>Kavya College</strong>, and author chapters,
+            video scripts, and teacher-training materials for
+            <strong>Ing Impact</strong> and the national CS curriculum.
+          </p>
+          <p>
+            I&rsquo;m open to freelance and contract work &mdash; particularly
+            Python/Django backend projects, REST API design, and technical
+            content development. If you&rsquo;re building something in that space,
+            <a href="#contact">let&rsquo;s talk</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <header class="section__head">
+          <span class="section__num mono">// 02</span>
+          <h3 class="section__title">Skills</h3>
+        </header>
+        <div class="section__body">
+          <div class="skills">
+            <div class="skills__group">
+              <h4 class="skills__label mono">languages</h4>
+              <ul class="skills__list">
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__label mono">backend</h4>
+              <ul class="skills__list">
+                <li>Django</li>
+                <li>Django REST Framework</li>
+                <li>PostgreSQL</li>
+                <li>SQLite</li>
+                <li>JWT Auth</li>
+                <li>REST API design</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__label mono">mobile</h4>
+              <ul class="skills__list">
+                <li>Android SDK</li>
+                <li>Cordova</li>
+                <li>Objective-C</li>
+                <li>Google Maps API</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__label mono">data &amp; tools</h4>
+              <ul class="skills__list">
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>Git</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__label mono">teaching</h4>
+              <ul class="skills__list">
+                <li>Curriculum design</li>
+                <li>Technical writing</li>
+                <li>Video scripting</li>
+                <li>Teacher training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <header class="section__head">
+          <span class="section__num mono">// 03</span>
+          <h3 class="section__title">Experience</h3>
+        </header>
+        <div class="section__body">
+          <ol class="timeline">
+            <li class="role">
+              <div class="role__dates mono">Aug 2025 &mdash; Present</div>
+              <div class="role__body">
+                <h4 class="role__title">Content Author <span class="role__at">&mdash; Ing Impact</span></h4>
+                <ul class="role__bullets">
+                  <li>Develop curriculum-aligned Grade 11 &amp; 12 Computer Science content based on CDC guidelines.</li>
+                  <li>Design chapters covering both theoretical foundations and practical, runnable examples.</li>
+                  <li>Write programming exercises and problem-solving activities matched to examination requirements.</li>
+                  <li>Review content for clarity, accuracy, and consistency across the book.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="role">
+              <div class="role__dates mono">2023 &mdash; Present</div>
+              <div class="role__body">
+                <h4 class="role__title">CS Content Expert &amp; Teacher <span class="role__at">&mdash; Kavya College</span></h4>
+                <ul class="role__bullets">
+                  <li>Contributed to Nepal&rsquo;s national Computer Science curriculum for Grades 9&ndash;12 &mdash; authored video scripts, eBooks, and teaching slides.</li>
+                  <li>Authored video scripts and teaching slides for the national C programming curriculum.</li>
+                  <li>Designed and delivered a 2-week intensive <em>Training for Teachers</em> program on Python fundamentals and secondary-education pedagogy.</li>
+                  <li>Led a 10-day advanced training on <em>Python for Data Science</em> &mdash; NumPy, Pandas, Matplotlib, Seaborn.</li>
+                  <li>Teach the national CS curriculum to Grades 11 &amp; 12 using interactive coding platforms and real-world case studies.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="role">
+              <div class="role__dates mono">2021 &mdash; 2024</div>
+              <div class="role__body">
+                <h4 class="role__title">Java Programming Lecturer <span class="role__at">&mdash; Islington College</span></h4>
+                <ul class="role__bullets">
+                  <li>Taught large-scale Java programming courses &mdash; 500+ undergraduate students per semester.</li>
+                  <li>Mentored and supervised 25+ final-year student projects from concept through implementation.</li>
+                  <li>Designed course materials, lab sessions, and assessments with a heavy focus on hands-on programming and live debugging.</li>
+                  <li>Built internal automation tools for assignment checking and marks entry &mdash; reduced grading time and improved consistency.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="role">
+              <div class="role__dates mono">2018 &mdash; 2020</div>
+              <div class="role__body">
+                <h4 class="role__title">Mobile Application Developer <span class="role__at">&mdash; Freelance</span></h4>
+                <ul class="role__bullets">
+                  <li>Built, deployed, and maintained Android and iOS applications using Cordova, Objective-C, and Java.</li>
+                  <li>Owned the full lifecycle &mdash; requirements, performance optimization, App Store / Play Store deployment.</li>
+                  <li>Worked directly with clients on scoping, progress updates, and on-schedule delivery.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <header class="section__head">
+          <span class="section__num mono">// 04</span>
+          <h3 class="section__title">Projects</h3>
+        </header>
+        <div class="section__body">
+          <div class="projects">
+
+            <article class="project">
+              <div class="project__head">
+                <h4 class="project__title">Finance Tracker API</h4>
+                <a href="#" class="project__link mono" aria-label="View Finance Tracker API on GitHub">repo <span>→</span></a>
+              </div>
+              <p class="project__desc">
+                <em class="placeholder">Description coming soon.</em>
+                Secure RESTful API for user authentication, transaction
+                logging, and budget categorization.
+              </p>
+              <ul class="project__stack mono">
+                <li>Python</li><li>Django REST Framework</li><li>PostgreSQL</li><li>JWT</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <div class="project__head">
+                <h4 class="project__title">Workout Tracker API</h4>
+                <a href="#" class="project__link mono" aria-label="View Workout Tracker API on GitHub">repo <span>→</span></a>
+              </div>
+              <p class="project__desc">
+                <em class="placeholder">Description coming soon.</em>
+                Backend service for user profiles, workout routine logging,
+                and fitness progress tracking over time.
+              </p>
+              <ul class="project__stack mono">
+                <li>Python</li><li>Django REST Framework</li><li>SQLite</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <div class="project__head">
+                <h4 class="project__title">Surakshya &mdash; Personal Safety App</h4>
+                <a href="#" class="project__link mono" aria-label="View Surakshya on GitHub">repo <span>→</span></a>
+              </div>
+              <p class="project__desc">
+                <em class="placeholder">Description coming soon.</em>
+                Android application that relays GPS location and an emergency
+                message to pre-selected contacts with a single tap.
+              </p>
+              <ul class="project__stack mono">
+                <li>Java</li><li>Android SDK</li><li>Google Maps API</li><li>SMS API</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- WRITING -->
+      <section class="section" id="writing">
+        <header class="section__head">
+          <span class="section__num mono">// 05</span>
+          <h3 class="section__title">Writing</h3>
+        </header>
+        <div class="section__body">
+          <p class="section__intro">
+            Selected posts on Django, REST Framework, and Git &mdash; published
+            on freeCodeCamp, Dev.to, and Medium.
+          </p>
+          <ul class="writing">
+
+            <li class="post">
+              <a href="https://www.freecodecamp.org/news/build-and-deploy-a-fitness-tracker-using-python-django-and-pythonanywhere/" target="_blank" rel="noopener">
+                <span class="post__platform mono">freeCodeCamp</span>
+                <span class="post__title">Build and Deploy a Fitness Tracker using Python, Django, and PythonAnywhere</span>
+                <span class="post__arrow mono">↗</span>
+              </a>
+            </li>
+
+            <li class="post">
+              <a href="https://dev.to/prabodh_tuladhar/introduction-to-serializers-in-django-rest-framework-drf-part-1-4bbg" target="_blank" rel="noopener">
+                <span class="post__platform mono">Dev.to</span>
+                <span class="post__title">Introduction to Serializers in Django REST Framework &mdash; Part 1</span>
+                <span class="post__arrow mono">↗</span>
+              </a>
+            </li>
+
+            <li class="post">
+              <a href="https://dev.to/prabodh_tuladhar/introduction-to-serializers-in-django-rest-framework-drf-part-ii-448n" target="_blank" rel="noopener">
+                <span class="post__platform mono">Dev.to</span>
+                <span class="post__title">Introduction to Serializers in Django REST Framework &mdash; Part 2</span>
+                <span class="post__arrow mono">↗</span>
+              </a>
+            </li>
+
+            <li class="post">
+              <a href="https://prabodh44.medium.com/git-and-github-basics-part-1-git-commands-2bac9d93a123" target="_blank" rel="noopener">
+                <span class="post__platform mono">Medium</span>
+                <span class="post__title">Git and GitHub Basics &mdash; Part 1: Git Commands</span>
+                <span class="post__arrow mono">↗</span>
+              </a>
+            </li>
+
+            <li class="post">
+              <a href="https://prabodh44.medium.com/git-and-github-basics-part-2-git-commands-ab824b0ef839" target="_blank" rel="noopener">
+                <span class="post__platform mono">Medium</span>
+                <span class="post__title">Git and GitHub Basics &mdash; Part 2: Git Commands</span>
+                <span class="post__arrow mono">↗</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section--contact" id="contact">
+        <header class="section__head">
+          <span class="section__num mono">// 06</span>
+          <h3 class="section__title">Contact</h3>
+        </header>
+        <div class="section__body">
+          <p class="contact__lead">
+            Have a Django/Python project, an API to design, or a teaching role
+            to fill? Send a message &mdash; I reply within a day or two.
+          </p>
+
+          <!--
+            Formspree setup:
+            1. Sign up at https://formspree.io and create a new form.
+            2. Copy your endpoint (e.g. https://formspree.io/f/xyzabcde).
+            3. Replace YOUR_FORMSPREE_ID below with the ID portion (xyzabcde).
+          -->
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" id="contactForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send message</button>
+            <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-direct">
+            <p class="mono">or reach me directly:</p>
+            <ul>
+              <li><a href="mailto:prabodhtuladhar44@gmail.com">prabodhtuladhar44@gmail.com</a></li>
+              <li><a href="https://linkedin.com/in/prabodh-tuladhar" target="_blank" rel="noopener">linkedin.com/in/prabodh-tuladhar</a></li>
+              <li><a href="https://github.com/prabodh44" target="_blank" rel="noopener">github.com/prabodh44</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer mono">
+        <span>&copy; <span id="year"></span> Prabodh Tuladhar</span>
+        <span>Built with HTML, CSS &amp; a little JS.</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
