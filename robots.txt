@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+ 
+Sitemap: https://prabodhtuladhar.com.np/sitemap.xml
