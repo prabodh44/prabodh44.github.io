@@ -1,0 +1,169 @@
+/* ===================== CHAT WIDGET =====================
+   Uses the same design tokens defined in styles.css (:root).
+   No new colors/fonts introduced — this inherits the site's palette.
+   ========================================================= */
+
+.chat-toggle {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--forest-ink);
+  color: var(--sand-card);
+  box-shadow: 0 8px 24px rgba(27, 42, 34, 0.25);
+  z-index: 80;
+  transition: transform .2s var(--ease), background .2s var(--ease);
+}
+.chat-toggle:hover {
+  background: var(--terracotta-dark);
+  transform: translateY(-2px);
+}
+
+.chat-panel {
+  position: fixed;
+  bottom: 6rem;
+  right: 1.75rem;
+  width: min(360px, calc(100vw - 2.5rem));
+  height: min(480px, calc(100vh - 8rem));
+  background: var(--sand-card);
+  border: 1px solid var(--sand-line);
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(27, 42, 34, 0.22);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 80;
+  opacity: 0;
+  transform: translateY(12px) scale(.98);
+  pointer-events: none;
+  transition: opacity .2s var(--ease), transform .2s var(--ease);
+}
+.chat-panel.is-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.chat-panel__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .75rem;
+  padding: 1rem 1.1rem;
+  background: var(--sand-raised);
+  border-bottom: 1px solid var(--sand-line);
+}
+.chat-panel__title {
+  font-family: var(--ff-display);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--forest-ink);
+}
+.chat-panel__sub {
+  font-size: .7rem;
+  color: var(--terracotta-dark);
+  margin-top: .2rem;
+}
+.chat-panel__close {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--forest-soft);
+  transition: color .2s var(--ease);
+}
+.chat-panel__close:hover { color: var(--terracotta-dark); }
+
+.chat-panel__messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+}
+
+.chat-msg {
+  max-width: 88%;
+  padding: .6rem .85rem;
+  border-radius: 10px;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+.chat-msg--bot {
+  align-self: flex-start;
+  background: var(--sand-raised);
+  color: var(--forest-ink);
+  border: 1px solid var(--sand-line);
+  border-bottom-left-radius: 2px;
+}
+.chat-msg--user {
+  align-self: flex-end;
+  background: var(--forest-ink);
+  color: var(--sand-card);
+  border-bottom-right-radius: 2px;
+}
+.chat-msg--error {
+  align-self: flex-start;
+  background: var(--terracotta-tint);
+  color: var(--terracotta-dark);
+  border: 1px solid var(--terracotta-soft);
+  border-bottom-left-radius: 2px;
+}
+.chat-msg--typing {
+  align-self: flex-start;
+  color: var(--forest-soft);
+  font-family: var(--ff-mono);
+  font-size: .75rem;
+}
+
+.chat-panel__form {
+  display: flex;
+  gap: .5rem;
+  padding: .85rem;
+  border-top: 1px solid var(--sand-line);
+  background: var(--sand-card);
+}
+.chat-panel__form input {
+  flex: 1;
+  font-family: var(--ff-body);
+  font-size: .875rem;
+  color: var(--forest-ink);
+  padding: .6rem .75rem;
+  background: #fff;
+  border: 1px solid var(--sand-line);
+  border-radius: 6px;
+  transition: border-color .2s var(--ease);
+}
+.chat-panel__form input:focus {
+  outline: none;
+  border-color: var(--terracotta);
+}
+.chat-panel__send {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: var(--forest-ink);
+  color: var(--sand-card);
+  border-radius: 6px;
+  transition: background .2s var(--ease);
+}
+.chat-panel__send:hover { background: var(--terracotta-dark); }
+.chat-panel__send:disabled {
+  background: var(--sand-line);
+  color: var(--forest-soft);
+}
+
+@media (max-width: 480px) {
+  .chat-panel {
+    right: 1.25rem;
+    left: 1.25rem;
+    width: auto;
+    bottom: 5.5rem;
+  }
+  .chat-toggle { right: 1.25rem; bottom: 1.25rem; }
+}
