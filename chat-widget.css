@@ -99,6 +99,33 @@
   border: 1px solid var(--sand-line);
   border-bottom-left-radius: 2px;
 }
+.chat-msg--bot p {
+  margin: 0;
+}
+.chat-msg--bot p + ul {
+  margin-top: .5rem;
+}
+.chat-msg--bot ul {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  padding-left: 0;
+}
+.chat-msg--bot li {
+  position: relative;
+  list-style: none;
+  padding-left: 1rem;
+  font-size: .85rem;
+  line-height: 1.45;
+}
+.chat-msg--bot li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--terracotta);
+  font-family: var(--ff-mono);
+  font-weight: 500;
+}
 .chat-msg--user {
   align-self: flex-end;
   background: var(--forest-ink);
